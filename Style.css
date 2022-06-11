@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{margin: 0%;padding: 0%;text-decoration: none;list-style: none;font-family: 'Roboto', sans-serif;color: var(--TextColor-1);}
+/*-----------------| [Cores] |-----------------*/
+:root{
+    --TextColor-1: #343434;
+    --TextColor-2: #2e75cc;
+    --TextColor-3: #ffffff;
+
+    --BackGroundColor--1:#343434;
+    --BackGroundColor--2:#2e75cc;
+    --BackGroundColor--3:#9c88ff;
+}
+/*-----------------| [Tag de Principal do Corpo] |-----------------*/
+.Main__Container{
+    gap: 1rem;
+    display: flex;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+
+    top: 1vh;
+    width: 100%;
+    max-width: 1110px;
+    position: relative;
+}
+.Painel__Central{ 
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Painel__Central .Button__Config{
+    left: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 20rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    background-color: #ffffff00;
+    transition: 0.3s;
+}
+.Painel__Central .Button__Config:hover{
+    background-color: #ececec;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Painel__Central .Title__Section{text-align: center;font-size: 2rem;margin-bottom: 2rem;}
+.Painel__Central article .Title__Article{font-size: 1.2rem;}
+.Painel__Central article .Balance__Value{font-size: 1.8rem;color: var(--TextColor-2);}
+.Painel__Central article .Painel__Value{
+    gap: 2rem;
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Painel__Central article .Painel__Value div{display: flex;align-items: center;flex-direction: column;}
+.Painel__Central article .Painel__Value .Line{height: 2rem;width: 1px;background-color: var(--BackGroundColor--1);}
+.Painel__Central article .Painel__Value .Painel__Value__Title{font-size: 1.2rem;}
+.Painel__Central article h4{border-bottom: 1px solid #bbb;padding-bottom: 10px;margin: 40px 0 10px;}
+.Painel__Central article .Form__Container{gap: 1rem;display: flex;flex-direction: column;}
+.Painel__Central article .Form__Container .Form__Control{
+   gap: 0.5rem;
+   display: flex;
+   flex-direction: column;
+}
+.Painel__Central article .Form__Container .Form__Control input{
+    padding: 5px;
+    height: 1.5rem;
+    outline: none;
+    border-radius: 1rem;
+    border: 2px solid white;
+    transition: 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Painel__Central article .Form__Container .Form__Control input:focus{border: 2px solid var(--BackGroundColor--2);}
+.Painel__Central article .Form__Container button{
+    border: none;
+    outline: none;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: var(--TextColor-3);
+    background-color: var(--BackGroundColor--3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Configurações{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    opacity: 1;
+    height: 20vh;
+    width: 15%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+    transition: 0.3s;
+}
+.Configurações article ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.Configurações article ul .Input__Name{
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.Configurações article ul .Input__Name input{
+    height: 1.4rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 2px solid white;
+    transition: 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Configurações article ul .Input__Name input:focus{border: 2px solid var(--BackGroundColor--2);}
+.Configurações article ul button{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: var(--TextColor-3);
+    background-color: var(--BackGroundColor--3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 7px rgba(0, 0, 0, 0.24);
+}
+.Configurações .Title__Configurações{margin-bottom: 1rem;}

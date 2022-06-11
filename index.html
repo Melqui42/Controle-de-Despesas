@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="Style.css">
+        <title>Controle de despesas</title>
+    </head>
+    <body>
+        <main class="Main__Container">
+            <section class="Painel__Central">
+                <button class="Button__Config" onclick="Effect.click()"><i class="uil uil-cog"></i></button>
+                <h1 class="Title__Section">Controle de despesas</h1>
+                <article>
+                    <p class="Title__Article">SALDO ATUAL</p>
+                    <h1 class="Balance__Value">R$0.00</h1>
+                    <div class="Painel__Value">
+                        <div>
+                            <p class="Painel__Value__Title">Receitas</p>
+                            <p class="Money__Plus" style="color: green;">+R$0.00</p>
+                        </div>
+                        <div class="Line"></div>
+                        <div>
+                            <p class="Painel__Value__Title">Despesas</p>
+                            <p class="Money__Minus" style="color: red;">-R$0.00</p>
+                        </div>
+                    </div>
+                    <h4>Transações</h4>
+                    <ul class="Transactions"></ul>
+                    <h4>Adicionar transação</h4>
+                    <form action="" class="Form__Container">
+                        <div class="Form__Control">
+                            <label for="text">Nome</label>
+                            <input autofocus type="text" id="text" placeholder="Nome da transação" />
+                        </div>
+                        <div class="Form__Control">
+                            <label for="amount">Valor <br />
+                              <small>(negativo - despesas, positivo - receitas)</small>
+                            </label>
+                            <input type="number" id="amount" placeholder="Valor da transação" />
+                        </div>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </article>
+            </section>
+            <section class="Configurações" id="Configurações">
+                <h4 class="Title__Configurações">Configurações</h4>
+                <article>
+                    <ul>
+                        <li class="Input__Name">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Digite seu nome">
+                        </li>
+                        <li><button type="submit">Adicionar</button></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
